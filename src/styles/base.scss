@@ -1,0 +1,128 @@
+@import url("http://overpass-30e2.kxcdn.com/overpass.css");
+$hover: #5B90C8;
+$border: #858585;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@viewport {
+  width: device-width;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'overpass';
+  font-size: 1.2rem;
+}
+
+ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s linear;
+}
+
+body {
+  background: url("./../assets/img/swirl_pattern.png") repeat !important;
+  font-family: arial;
+  font-size: 1rem;
+}
+
+.row , .col {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.title {
+  margin: 20px 0 10px;
+}
+/////////////////
+.grid-app {
+  max-width: 1280px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.grid-header {
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $border;
+}
+
+.grid-page {
+  min-height: calc(100vh - (80px + 60px) );
+}
+
+.grid-footer {
+  height: 60px;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: 1px solid $border;
+}
+/////////////////
+.logo {
+  max-width: 80px;
+}
+
+.nav.main .list {
+  display: flex;
+}
+
+.nav.main .item {
+  margin-right: 20px;
+}
+
+.nav.main .item:last-of-type {
+  margin-right: 0;
+}
+
+.nav.main .link.active,
+a.active, a:hover,
+.nav.main .link:hover {
+  color: $hover;
+}
+
+.signature {
+  flex: 0 0 20%;
+  max-width: 195px;
+  text-align: right;
+}
+
+.form{
+  width: 80%;
+  margin:auto;
+
+}
+
+.form input, .form textarea{
+  width: 100%;
+  float: left;
+  margin:10px;
+  min-height: 30px;
+}
+
+.form label{
+  width: 100%;
+  float: left;
+  margin-left: 10px;
+}
+
+.form input[type='submit']{
+  width: 20%;
+  margin-left: 10px;
+}
